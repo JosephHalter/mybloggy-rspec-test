@@ -8,4 +8,8 @@ RSpec.describe Article do
     article.reload
     expect(article.title).to eq "something"
   end
+
+  it "infer type from directory structure without infer_spec_type_from_file_location!" do
+    expect(my_model_helper).to be true
+  end
 end
